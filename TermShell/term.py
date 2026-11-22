@@ -1,16 +1,4 @@
-"""
-termShell.py — pure-standard-library terminal for Windows.
-No pip packages. Python 3.8+.
-
-v1.6.0 — performance edition:
-  PERF 1: shell=False fast path for simple commands (no cmd.exe spawn)
-  PERF 2: prompt inputs cached (no syscalls per keystroke)
-  PERF 3: plugin directory + hashes cached (no re-hash at startup)
-  PERF 4: builtins dispatched before tool-registry probes
-  PERF 5: live-sys refreshes processes every 3rd frame
-  PERF 6: launch with `python -O -S termShell.py` for fastest startup
-          (or a ts.bat wrapper: @echo off & python -O -S "%~dp0termShell.py" %*)
-"""
+#termShell is a Linux style terminal,
 
 import os
 import sys
